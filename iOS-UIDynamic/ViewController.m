@@ -61,7 +61,7 @@
     
     UISnapBehavior *snapBehavior = [[UISnapBehavior alloc]initWithItem:self.rectangleView snapToPoint:loctionPoint];
     
-    snapBehavior.damping = 0.2; // 减震系数
+    snapBehavior.damping = 0.1; // 减震系数
     
     // 移除行为
     [self.animator removeAllBehaviors];
@@ -96,7 +96,7 @@
 
     [self.animator addBehavior:gravityBehavior];
     [self.animator addBehavior:collisionBehavior];
-    
+
     
 }
 
